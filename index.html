@@ -63,9 +63,20 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="title">Эффективные решения<br> для вашего бизнеса</h1>
-                <button type="button" class="button-hero">Заказать услугу</button>
+                <button type="button" class="button-hero" data-modal-open>Заказать услугу</button>
             </div>
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal" >
+                <button class="modal-close" data-modal-close>
+                    <svg class="close-button" width="11" height="11">
+                        <use href="./images/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
 
         <!-- Секция "Бенефиты" -->
 
@@ -121,16 +132,30 @@
 
 
         <!--Секция "Чем мы занимаемся"-->
-
         <section class="section images-samples">
             <div class="container">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list">
-                    <li class="item"><img class="image" src="./images/index/img.jpg" alt="Картинка" width="370"></li>
-                    <li class="item"><img class="image" src="./images/index/img-1.jpg" alt="Еще одна картинка"
-                            width="370"></li>
-                    <li class="item"><img class="image" src="./images/index/img-2.jpg"
-                            alt="Еще одна и еще одна картинка" width="370"></li>
+                    <li class="item">
+                        <div class="thumb">
+                            <img class="image" src="./images/index/img.jpg" alt="Картинка" width="370">
+                            <div class="text">Десктопные приложения</div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumb"><img class="image" src="./images/index/img-1.jpg" alt="Еще одна картинка"
+                                width="370">
+                            <div class="text">Мобильные приложения</div>
+
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumb">
+                            <img class="image" src="./images/index/img-2.jpg" alt="Еще одна и еще одна картинка"
+                                width="370">
+                            <div class="text">Дизайнерские решения</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -357,32 +382,34 @@
     </main>
 
     <footer class="footer">
-    
-    
-    
+
+
+
         <div class="container">
-    
-    
+
+
             <div class="footer-block">
-    
+
                 <div class="footer-block-1">
                     <a class="logo logo-footer" href="">Web<spam class="studio-white">Studio</spam></a>
-                    <address class="adress">    
+                    <address class="adress">
                         <ul class="adress-list">
                             <li class="item"><a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                            <li class="item"><a class="link opacity-60" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li class="item"><a class="link opacity-60" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                            <li class="item"><a class="link opacity-60"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="item"><a class="link opacity-60" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
                         </ul>
 
-                        </address>
+                    </address>
                 </div>
-    
-      
-    
+
+
+
                 <div class="footer-social-network-block">
                     <h2 class="footer-social-network-title">присоединяйтесь</h2>
                     <ul class="footer-social-network-list">
-                        
+
                         <li class="footer-social-network-item">
                             <a href="" class="footer-social-network-link">
                                 <svg class="footer-social-network-icon" width="20" height="20">
@@ -414,15 +441,15 @@
                     </ul>
                 </div>
             </div>
-    
-    
+
+
         </div>
-    
-    
-    
-    
+
+
+
+
     </footer>
-    <script src="./modal.js"></script>
+    <script src="../js/modal.js"></script>
 </body>
 
 </html>
